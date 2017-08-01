@@ -121,8 +121,6 @@ function init_workspace()
   sleep 5
   idea &
   sleep 5
-  /opt/franz/Franz &
-  sleep 5
   sky &
   sleep 5
 
@@ -133,18 +131,11 @@ function init_workspace()
   sleep 5
   mysql-workbench &
 
-  sleep 15
-
-  #workspace 2
-  spotify &
-
   sleep 10
 
   move_window "MongoDB Connections" `get_coord 3`
   move_window "Robomongo 0.9.0" `get_coord 3`
   move_window "MySQL Workbench" `get_coord 3`
-
-  move_window Spotify `get_coord 2`
 }
 
 init_workspace
